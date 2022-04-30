@@ -1,0 +1,64 @@
+﻿body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    max-width: 28em;
+    min-width: 15em;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+}
+
+
+/*Showing Logged In Users */
+.users-list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.users-list-item {
+    padding: 20px;
+    background: white;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+    .users-list-item:hover {
+        cursor: pointer;
+        background-color: #f2f2f2;
+    }
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.user-details {
+    padding-left: 20px;
+    border-left: 1px solid #eee;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .user-details p {
+        margin: 0;
+        min-width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
